@@ -42,8 +42,8 @@ class Chain {
 
   constructor() {
     this.chain = [
-      //Blok początkowy
-      new Block('', new Transaction(100, 'patryk', 'piotr'))
+      //Blok genesis
+      new Block('', new Transaction(10000, 'genesis', 'piotr'))
     ];
   }
 
@@ -119,8 +119,8 @@ class Wallet {
 const piotr = new Wallet();
 const patryk = new Wallet();
 
-piotr.sendMoney(112, patryk.publicKey);
-patryk.sendMoney(997, piotr.publicKey);
+piotr.sendMoney(997, patryk.publicKey);
+patryk.sendMoney(112, piotr.publicKey);
 
 //TODO Dodaj swój portfel oraz wykonaj przykładowe transkacje
 
