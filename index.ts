@@ -125,7 +125,7 @@ patryk.sendMoney(112, piotr.publicKey);
 //TODO Dodaj swój portfel oraz wykonaj przykładowe transkacje
 
 
-//Wizualizacja łańcucha bloku
+//Wizualizacja łańcucha bloków
 Chain.instance.chain.forEach(element => {
   console.log(element);
 });
